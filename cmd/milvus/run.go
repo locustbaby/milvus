@@ -176,5 +176,6 @@ func (c *run) injectVariablesToEnv() {
 	if err != nil {
 		log.Warn(fmt.Sprintf("failed to inject %s to environment variable", metricsinfo.MilvusUsedGoVersion),
 			zap.Error(err))
+		log.Warn("aa")
 	}
 }
