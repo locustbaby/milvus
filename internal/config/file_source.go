@@ -115,6 +115,6 @@ func (fs *FileSource) loadFromFile() error {
 		fs.configs[formatKey(key)] = str
 		fs.Unlock()
 	}
-
+	log.Warn("sssss")
 	return nil
 }
