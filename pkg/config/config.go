@@ -17,6 +17,7 @@
 package config
 
 import (
+	"fmt"
 	"strings"
 
 	"github.com/cockroachdb/errors"
@@ -49,6 +50,7 @@ func Init(opts ...Option) (*Manager, error) {
 		}
 		sourceManager.AddSource(s)
 	}
+	fmt.Println(sourceManager)
 	return sourceManager, nil
 
 }

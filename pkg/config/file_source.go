@@ -160,5 +160,7 @@ func (fs *FileSource) loadFromFile() error {
 	}
 	fs.configs = newConfig
 
+	fmt.Println(configFiles)
+	fmt.Println(newConfig)
 	return nil
 }
